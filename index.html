@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechGuard — WhatsApp IA Bot Factory</title>
+  <title>TechGuard — WhatsApp IA Agents</title>
   <meta name="description" content="Bot WhatsApp a la medida: respuestas automáticas, IA/LLM, menús, pedidos, citas, facturas, escalado a humano, notificaciones y registro de conversaciones." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0a1f18" />
@@ -555,19 +555,12 @@
       <div class="wrap hero__content">
         <div class="hero__brand-row">
           <p class="hero__brand">Tech<em>Guard</em></p>
-          <p class="hero__product">WhatsApp IA Bot Factory</p>
+          <p class="hero__product">WhatsApp AI Agents</p>
         </div>
         <h1 class="hero__title">Agentes IA a la medida de las necesidades de tu empresa.</h1>
         <p class="hero__lead">
           Respuestas automáticas, IA, pedidos, citas, facturas y escalado a humano — con runbook Meta listo para conectar tu número.
         </p>
-        <div class="hero__ctas">
-          <a class="btn btn--primary btn--lg" href="#planes">Ver planes y comprar</a>
-          <a
-            class="btn btn--lg btn--ghost"
-            href="https://techguardtenant-rgb.github.io/techguard-whatsapp-bot-landing/"
-          >El panel de empresa está en tu enlace de GitHub</a>
-        </div>
       </div>
     </section>
 
@@ -576,8 +569,7 @@
         <p class="section__tag">Producto</p>
         <h2 class="section__title">Qué es TechGuard</h2>
         <p class="section__lead">
-          Compra un plan de bot, obtienes un panel de empresa para skills, flujos y MCP.
-          Según el plan, tú o TechGuard configuran el número Meta WhatsApp Cloud API.
+          Skills, flujos y MCP Según tu contexto de negocio, tú o TechGuard configuran el número Meta WhatsApp Cloud API.
         </p>
       </div>
     </section>
@@ -641,94 +633,6 @@
       </div>
     </section>
 
-    <section class="section" id="planes">
-      <div class="wrap">
-        <p class="section__tag">ePayco</p>
-        <h2 class="section__title">Planes de bot IA</h2>
-        <p class="section__lead">
-          Ingresa a la prueba gratuita o compra un plan. El cupo de mensajes está alineado a las tarifas
-          Meta WhatsApp Cloud API en Colombia (~ago 2026): marketing ≈ US$0.0125 · utility/auth ≈ US$0.0008;
-          respuestas de servicio en ventana 24&nbsp;h gratis hasta oct&nbsp;2026. Las plantillas marketing
-          de Meta se cobran en tu cuenta WABA aparte del plan TechGuard.
-          Rate card oficial:
-          <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">Precios WhatsApp Business Platform</a>.
-        </p>
-        <div class="plans" id="plans-root" aria-live="polite">
-          <p class="section__lead">Cargando planes…</p>
-        </div>
-        <div id="epayco-checkout-host" aria-live="polite"></div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="conectar">
-      <div class="wrap">
-        <p class="section__tag">WhatsApp</p>
-        <h2 class="section__title">Cómo se conecta el número</h2>
-        <p class="section__lead">
-          Tu número de WhatsApp Business se conecta a través de Meta (Facebook Developers).
-          Tú creas la app y el número; TechGuard es el <strong>webhook</strong>: la dirección
-          donde Meta entrega los mensajes para que el bot de tu empresa responda.
-        </p>
-        <ol class="steps">
-          <li>
-            <strong>Crea tu app en Meta</strong>
-            En <a href="https://developers.facebook.com/apps/" target="_blank" rel="noopener">My Apps</a>
-            crea una app, agrega el producto WhatsApp y vincula el número.
-            Guía:
-            <a href="https://developers.facebook.com/docs/whatsapp/cloud-api/get-started/" target="_blank" rel="noopener">Get started · Cloud API</a>.
-          </li>
-          <li>
-            <strong>Copia los datos del número</strong>
-            En <em>WhatsApp → API Setup</em> o
-            <a href="https://business.facebook.com/latest/whatsapp_manager/phone_numbers" target="_blank" rel="noopener">WhatsApp Manager</a>:
-            Phone Number ID, WABA ID, App ID, App Secret.
-            Token permanente desde
-            <a href="https://business.facebook.com/settings/system-users" target="_blank" rel="noopener">System Users</a>.
-            Docs números:
-            <a href="https://developers.facebook.com/docs/whatsapp/cloud-api/phone-numbers/" target="_blank" rel="noopener">Business phone numbers</a>.
-          </li>
-          <li>
-            <strong>Pégalos en tu panel TechGuard</strong>
-            En el dashboard de empresa (o TechGuard si tu plan lo incluye) guardas esos datos de forma segura.
-          </li>
-          <li>
-            <strong>Activa el webhook de TechGuard</strong>
-            En Meta: <em>WhatsApp → Configuration</em>
-            (<a href="https://developers.facebook.com/docs/whatsapp/cloud-api/guides/set-up-webhooks/" target="_blank" rel="noopener">Set up webhooks</a>).
-            Pegas la URL de webhook de TechGuard y el Verify Token. Ahí Meta enviará cada mensaje entrante.
-          </li>
-        </ol>
-        <p class="section__lead" style="margin-top:20px;margin-bottom:12px">
-          Enlaces rápidos:
-          <a href="https://developers.facebook.com/docs/whatsapp/cloud-api/get-started/" target="_blank" rel="noopener">Get started</a>
-          ·
-          <a href="https://developers.facebook.com/apps/" target="_blank" rel="noopener">My Apps</a>
-          ·
-          <a href="https://business.facebook.com/" target="_blank" rel="noopener">Business Suite</a>
-          ·
-          <a href="https://business.facebook.com/settings/system-users" target="_blank" rel="noopener">System Users</a>
-          ·
-          <a href="https://developers.facebook.com/docs/whatsapp/cloud-api/guides/set-up-webhooks/" target="_blank" rel="noopener">Webhooks</a>
-        </p>
-        <p class="section__lead" style="margin-top:0;margin-bottom:12px">
-          <strong style="color:var(--ink)">Precios Meta WhatsApp (oficial):</strong>
-          consulta el rate card por país y categoría (marketing, utility, auth, servicio) en
-          <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">developers.facebook.com/docs/whatsapp/pricing</a>
-          ·
-          <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing" target="_blank" rel="noopener">Business Messaging · Pricing</a>
-          · actualizaciones
-          <a href="https://developers.facebook.com/docs/whatsapp/pricing/updates-to-pricing/" target="_blank" rel="noopener">Updates to pricing</a>
-          (incluye COP y cambios oct&nbsp;2026).
-        </p>
-        <p class="section__lead" style="margin-top:0;margin-bottom:0">
-          <strong style="color:var(--ink)">¿Qué es TechGuard en este flujo?</strong>
-          No es tu número de WhatsApp. Es el servidor que recibe los mensajes (webhook) y ejecuta el
-          agente IA de tu empresa (skills, flujos, MCP) para contestar. Tú decides el contenido;
-          Meta lleva el mensaje; TechGuard lo procesa.
-        </p>
-      </div>
-    </section>
-
     <section class="section" id="negocio">
       <div class="wrap">
         <p class="section__tag">Empresa</p>
@@ -783,7 +687,6 @@
 
   <script>
 (function () {
-  // En producción Nginx proxea /p2l-tenant/api/* → Node. /api/* en raíz da 404 sin CORS → NetworkError en fetch.
   var API = 'https://www.refactorii.com/p2l-tenant/api/p2l-techguard-whatsapp-bot';
   var FALLBACK_PLANS = [
     {
